@@ -1,0 +1,39 @@
+{
+  "name": "hexan-quick-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "dependencies": {
+    "hexan": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg .",
+    "build-linux": "pkg . --target=linux",
+    "build-windows": "pkg . --target=windows",
+    "build-macos": "pkg . --target=macos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parsgit/hexan.git"
+  },
+  "keywords": [
+    "hexan"
+  ],
+  "author": "nvioir@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parsgit/hexan/issues"
+  },
+  "homepage": "https://github.com/parsgit/hexan#readme",
+  "pkg": {
+    "assets": [
+      "files/**/*",
+      "node_modules/bootstrap/**/*",
+      "node_modules/jquery/**/*",
+      "node_modules/socket.io-client/**/*"
+    ]
+  }
+}

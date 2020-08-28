@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Hello Hexan</title>
+
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+  <div class="d-flex justify-content-center align-items-center mt-4">
+    <div class="" style="width: 450px;background: #eaeaea;height: 400px;border-radius: 5px;">
+
+      <div class="d-flex flex-row-reverse align-items-center" style="background: #8c8f93;">
+        <div class="p-2">
+          <button onclick="closeApp()" type="button" class="btn" name="button">close</button>
+        </div>
+        <div class="p-2" style="margin-right:auto;">
+          status : <span id="app-status" >off</span>
+        </div>
+      </div>
+
+      <div class="p-4">
+
+        <h3 class="text-center" >Hello World</h3>
+
+        <div class="p-3">
+          <a href="https://getbootstrap.com/docs/4.5">Bootstrap 4.5.2</a> is installed by default
+        </div>
+
+        <div class="p-3">
+          The path of this file is <b>files/views/index.html</b>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="../node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script type="text/javascript">
+    var io = io();
+
+    io.on('connect', (socket) => {
+      $('#app-status').text('Runing').css('color','green');
+    });
+
+    io.on('disconnect', () => {
+      $('#app-status').text('Closed app').css('color','red');
+    });
+
+    function closeApp() {
+      io.emit('close-app');
+    }
+  </script>
+</body>
+</html>
