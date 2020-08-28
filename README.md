@@ -8,13 +8,14 @@ $ cd hexan-quick-start
 $ npm install
 
 $ npm run
+
 ```
 
 <br>
 
 To create a package, first install the pkg library once
 
-``
+```
 npm install -g pkg
 ```
 
