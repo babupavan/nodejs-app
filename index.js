@@ -1,6 +1,9 @@
 hex = require('hexan');
 
-hex.app.use('/files', hex.express.static(__dirname + '/files'));
+
+hex.setStatic(__dirname,'/node_modules');
+hex.setStatic(__dirname,'/files');
+
 
 hex.app.get('/', (req, res) => {
   res.sendFile(__dirname+'/files/views/index.html');
