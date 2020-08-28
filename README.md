@@ -8,7 +8,6 @@ $ cd hexan-quick-start
 $ npm install
 
 $ npm run
-
 ```
 
 <br>
