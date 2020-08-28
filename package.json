@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "dependencies": {
-    "hexan": "^1.0.0"
+    "hexan": "^1.0.*"
   },
   "devDependencies": {},
   "scripts": {
