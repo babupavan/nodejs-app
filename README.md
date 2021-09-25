@@ -7,7 +7,7 @@ $ cd hexan-quick-start
 
 $ npm install
 
-$ npm run
+$ npm start
 ```
 
 <br>
