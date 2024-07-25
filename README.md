@@ -1,7 +1,7 @@
 # hexan quick start
 
 ```
-$ git clone https://github.com/parsgit/hexan-quick-start
+$ git clone https://github.com/babupavan/nodejs-app.git
 
 $ cd hexan-quick-start
 
