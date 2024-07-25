@@ -25,9 +25,9 @@
   "author": "gpavankumarreddy98@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/babupavan/nodejs-app.git/issues"
+    "url": "https://github.com/babupavan/nodejs-app/issues"
   },
-  "homepage": "https://github.com/babupavan/nodejs-app.git#readme",
+  "homepage": "https://github.com/babupavan/nodejs-app#readme",
   "pkg": {
     "assets": [
       "files/**/*",
