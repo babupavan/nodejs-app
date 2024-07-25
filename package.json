@@ -1,5 +1,5 @@
 {
-  "name": "hexan-quick-start",
+  "name": "nodejs-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,17 +17,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/parsgit/hexan.git"
+    "url": "git+https://github.com/babupavan/nodejs-app.git"
   },
   "keywords": [
-    "hexan"
+    "nodejs-app"
   ],
-  "author": "nvioir@gmail.com",
+  "author": "gpavankumarreddy98@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/parsgit/hexan/issues"
+    "url": "https://github.com/babupavan/nodejs-app.git/issues"
   },
-  "homepage": "https://github.com/parsgit/hexan#readme",
+  "homepage": "https://github.com/babupavan/nodejs-app.git#readme",
   "pkg": {
     "assets": [
       "files/**/*",
