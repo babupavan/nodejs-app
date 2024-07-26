@@ -4,11 +4,9 @@
 $ git clone https://github.com/babupavan/nodejs-app.git
 
 ```
-
-$ npm install
 ```
 
-$ npm start
+$ npm install
 ```
 
 <br>
