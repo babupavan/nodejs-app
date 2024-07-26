@@ -3,9 +3,11 @@
 ```
 $ git clone https://github.com/babupavan/nodejs-app.git
 
-$ cd hexan-quick-start
+```
 
 $ npm install
+
+```
 
 $ npm start
 ```
