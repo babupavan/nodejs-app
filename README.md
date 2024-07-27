@@ -1,4 +1,3 @@
-# hexan quick start
 
 ```
 $ git clone https://github.com/babupavan/nodejs-app.git
