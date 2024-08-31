@@ -12,8 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get runner IP address
-      run: |
-        curl -s https://api.ipify.org > runner-ip.txt
+      run: curl -s https://api.ipify.org > runner-ip.txt
     - name: Upload runner IP address
       uses: actions/upload-artifact@v3
       with:
@@ -39,7 +38,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
+    - run: npm install # This should work without a lock file
     - run: npm run build --if-present
 
   # Deploy Job
