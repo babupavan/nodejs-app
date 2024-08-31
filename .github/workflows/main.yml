@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [v19.9.0]
+        node-version: [19.9.0]
     needs: checkout
     steps:
     - name: Download runner IP address
