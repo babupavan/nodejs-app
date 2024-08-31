@@ -30,9 +30,13 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '19.9.0'
+    - name: Change to app directory
+      run: cd nodejs-app
     - name: Install dependencies
       run: |
+        cd nodejs-app
         npm install
     - name: Build project
       run: |
+        cd nodejs-app
         npm run build --if-present
