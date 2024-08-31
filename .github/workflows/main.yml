@@ -46,6 +46,8 @@ jobs:
         npm install # Use `npm ci` if you have a package-lock.json
     - name: Build project
       run: |
+        pwd
+        ls
         cd nodejs-app  # Change directory to where package.json is located
         npm run build --if-present
 
